@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "67db05cb-6220-42be-8db9-8204970c6539",
+		"name": "Cliente Reactive",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "InsetarCliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"identificacion\": \"02545145422\",\r\n    \"nombre\": \"Quervin\",\r\n    \"apellido\": \"Hidalgo\",\r\n    \"paisResidencia\": \"US\",\r\n    \"paisNacimiento\": \"CR\",\r\n    \"direccionDomicilio\": \"Texas\",\r\n    \"telefonoContacto\": \"8596748596\",\r\n    \"estado\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/api/cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"api",
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consultarTodosClientes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/api/cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"api",
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

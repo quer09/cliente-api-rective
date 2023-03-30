@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 
 @RestController
-@RequestMapping("v1/api/cliente")
+@RequestMapping("/v1/api/cliente")
 public class ClienteApi {
     @Autowired
     private ClienteService clienteService;
